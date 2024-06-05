@@ -1,8 +1,6 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{values.component_id}}
-  description: ${{values.description}}
   links:
     - url: https://devspaces${{values.cluster}}/#https://${{values.host}}/${{values.destination}}
       title: OpenShift Dev Spaces (VS Code)
