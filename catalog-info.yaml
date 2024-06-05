@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstagedocs
+  name: xinyixinyi
   description: |
-    Backstage is an open-source developer portal that puts the developer experience first.
+    Xinyi test test
   links:
     - url: https://devspaces${{values.cluster}}/#https://${{values.host}}/${{values.destination}}
       title: OpenShift Dev Spaces (VS Code)
