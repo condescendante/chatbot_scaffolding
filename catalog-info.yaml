@@ -5,7 +5,6 @@ metadata:
   {%- if values.description %}
   description: ${{values.description | dump}}
   {%- endif %}
-
   links:
     - url: https://devspaces${{values.cluster}}/#https://${{values.host}}/${{values.destination}}
       title: OpenShift Dev Spaces (VS Code)
@@ -13,7 +12,6 @@ metadata:
     - url: https://devspaces${{values.cluster}}/#https://${{values.host}}/${{values.destination}}?che-editor=che-incubator/che-idea/latest
       title: OpenShift Dev Spaces (JetBrains IntelliJ)
       icon: web
-
   annotations:
     argocd/app-selector: rht-gitops.com/janus-argocd=${{values.component_id}}-bootstrap
     backstage.io/kubernetes-id: ${{values.component_id}}
@@ -22,7 +20,6 @@ metadata:
     backstage.io/techdocs-ref: url:https://${{values.host}}/${{values.destination}}
     gitlab.com/project-slug: ${{values.destination}}
     quay.io/repository-slug: ${{values.quay_destination | dump}}
-
   tags:
     - java
     - quarkus
